@@ -15,7 +15,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         {
             session_start();
             $_SESSION['loggedin'] = true;
-            $_SESSION['sno'] = $row['school_unique_id'];
+            $_SESSION['school_id'] = $row['school_unique_id'];
+            $_SESSION['school_name'] = $row['school_name'];
 
             header("Location: /markswise/Frontend/index.php?loginsuccess=true&school=".$row['school_unique_id']."");
         }
