@@ -1,3 +1,5 @@
+<?php include 'loginModal.php' ?>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="index.php">
@@ -13,8 +15,8 @@
                 <a class="nav-link active" aria-current="page" href="index.php">Home</a>
                 <a class="nav-link active" aria-current="page" href="usage.php">Usage</a>
                 <a class="nav-link active" aria-current="page" href="help.php"><i class="fas fa-question-circle"></i> Help</a>
-                <button class="btn btn-primary login-btn">Login</button>
-                <button class="btn btn-primary signup-btn">Create Account</button>
+                <button class="btn btn-primary login-btn" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+                <button class="btn btn-primary signup-btn" data-bs-toggle="modal" data-bs-target="#signupModal">Create Account</button>
             </div>
         </div>
     </div>
