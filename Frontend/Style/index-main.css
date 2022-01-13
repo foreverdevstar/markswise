@@ -6,9 +6,23 @@ body{
 margin-right: 10px;
 }
 
+.all-classes-container{
+margin-top: 50px;
+}
+.card{
+    margin: 10px;
+}
 @media only screen and (max-width: 768px) {
     .login-btn{
         margin-right: 0px;
         margin-bottom: 6px;
     }
+    .card{
+        margin: 0 auto; /* Added */
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+    }
+    .all-classes-container{
+        margin-top: 20px;
+        }
 }
