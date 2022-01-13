@@ -3,6 +3,7 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true)
 {
     echo
     '<div class="container all-classes-container">
+    <h4 class="mb-3 mb-3">Hello '.$_SESSION['school_name'].'!</h4>    
     <h2 class="mb-3">All Classes</h2>
     <div class="row">';
     include '../Backend/Utils/fetchclasses.php';

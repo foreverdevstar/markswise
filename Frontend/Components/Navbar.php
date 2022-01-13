@@ -19,9 +19,8 @@ echo
 
 if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true)
 {
-
     echo
-    '<button class="btn btn-outline-dark user-btn" disabled><i class="fas fa-school"></i>&nbsp;Welcome&nbsp;'.$_SESSION['school_name'].'</button>
+    '<button class="btn btn-outline-dark user-btn" disabled><i class="fas fa-school"></i>&nbsp;&nbsp;'.$_SESSION['school_name'].'</button>
     <button class="btn btn-primary logout-btn" data-bs-toggle="modal" data-bs-target="#logoutModal">Logout</button>';
 }
 else{
