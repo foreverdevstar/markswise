@@ -1,5 +1,5 @@
 <!-- Modal -->
-<form method="POST" action="">
+<form method="POST" action="../Backend/Authentication/handlesignup.php">
     <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered">
             <div class="modal-content">
@@ -11,20 +11,20 @@
                     <!-- form inside modal -->
                     <div class="mb-3">
                         <label for="schoolname" class="form-label">School Name</label>
-                        <input type="text" class="form-control" id="schoolname">
+                        <input type="text" class="form-control" id="schoolname" name="signupName">
                     </div>
                     <div class="mb-3">
                         <label for="email" class="form-label">Email address</label>
-                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" name="signupEmail">
                         <div id="emailHelp" class="form-text">We'll not spam to your e-mail.</div>
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label">Password</label>
-                        <input type="password" class="form-control" id="password">
+                        <input type="password" class="form-control" id="password" name="signupPassword">
                     </div>
                     <div class="mb-3">
                         <label for="password" class="form-label"> Confirm Password</label>
-                        <input type="password" class="form-control" id="password">
+                        <input type="password" class="form-control" id="password" name="signupConfirmPassword">
                     </div>
                 </div>
                 <div class="modal-footer">
