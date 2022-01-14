@@ -1,4 +1,5 @@
 <?php
+
     $servername = "localhost";
     $username = "root";
     $password = "";
@@ -6,7 +7,10 @@
 
     $method = $_SERVER['REQUEST_METHOD'];
     if($method == 'POST'){
-        
+
+    $schoolid = $_GET['schoolid'];
+    $classid = $_GET['classid'];
+    $sectionid = $_GET['sectionid'];
     $studentid = $_GET['studentid'];
     $bangla = $_POST['bangla'];
     $english = $_POST['english'];
@@ -21,5 +25,11 @@
 
     $sql = "UPDATE `studentsmarks` SET `bangla`='$bangla',`english`='$english',`maths`='$maths',`history`='$history',`physical_science`='$physicalscience',`life_science`='$lifescience',`geography`='$geography',`optional_elective`='$optionalelective' WHERE `student_unique_id`='$studentid'";
     $result = mysqli_query($connection, $sql);
+
+        echo
+        '<script>
+        window.location.href = "/markswise/Frontend/class.php?classid='.$classid.'&sectionid='.$sectionid.'&schoolid='.$schoolid.'";
+        </script>';
+
     }
 ?>

@@ -3,7 +3,11 @@ include '../Backend/Utils/handleeditstudent.php';
 include '../Backend/Utils/fetchstudent.php';
     while($row = mysqli_fetch_assoc($result))
     {
+        $classid = $row['class_id'];
+        $sectionid = $row['student_section'];
         $studentid= $row['student_unique_id'];
+        $schoolid= $row['school_unique_id'];
+
         $bangla = $row['bangla'];
         $english = $row['english'];
         $maths = $row['maths'];
@@ -15,7 +19,7 @@ include '../Backend/Utils/fetchstudent.php';
     }
 ?>
 
-<form action="../Backend/Utils/handleeditstudent.php?studentid=<?php echo $studentid ?>" method="post">
+<form action="../Backend/Utils/handleeditstudent.php?classid=<?php echo $classid ?>&sectionid=<?php echo $sectionid ?>&studentid=<?php echo $studentid ?>&schoolid=<?php echo $schoolid ?>" method="post">
     <div class="container">
         <div class="mb-3">
             <h3 class="mb-5 mt-4">Edit Subect Marks</h3>
