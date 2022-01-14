@@ -32,7 +32,6 @@ if(isset($_GET['sectionid'])){
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                    <form>
                         <div class="mb-3">
                             <input type="text" class="form-control" id="name" placeholder="Student Name" name="studentname">
                         </div>   
@@ -73,7 +72,6 @@ if(isset($_GET['sectionid'])){
                                 </div>
                             </div>
                         </div>      
-                    </form>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
