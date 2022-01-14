@@ -65,7 +65,9 @@
         <td>'.$name.'</td>
         <td>'.$classname.'</td>
         <td>'.$sectionname.'</td>
-        <td><a href="viewstudent.php?studentid='.$student_unique_id.'"><button type="button" class="btn btn-success">View</button></a>&nbsp;&nbsp;<a href="editstudent.php?studentid='.$student_unique_id.'"><button type="button" class="btn btn-warning"><i class="far fa-edit"></i></button></a>&nbsp;&nbsp;<a href="class.php?deleteid='.$student_unique_id.'&classid='.$class.'&sectionid='.$section.'&schoolid='.$school_id.'"><button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></a></td>
+        <td><a href="viewstudent.php?studentid='.$student_unique_id.'"><button type="button" class="btn btn-success">View</button></a>&nbsp;&nbsp;
+        <a href="editstudent.php?studentid='.$student_unique_id.'"><button type="button" class="btn btn-warning"><i class="far fa-edit"></i></button></a>&nbsp;&nbsp;
+        <a href="class.php?deleteid='.$student_unique_id.'&classid='.$class.'&sectionid='.$section.'&schoolid='.$school_id.'"><button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></a></td>
         </tr>';
      }
 ?>
