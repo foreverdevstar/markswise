@@ -2,21 +2,20 @@
 if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true)
 {
     echo
-    '<div class="container all-classes-container">
-    <h4 class="mb-3 mb-3">Hello '.$_SESSION['school_name'].'!</h4>    
-    <h2 class="mb-3">All Classes</h2>
+    '<div class="container all-classes-container">   
+    <h2 class="mb-3">All Sections</h2>
     <div class="row">';
-    include '../Backend/Utils/fetchclasses.php';
+    include '../Backend/Utils/fetchsections.php';
     while($row = mysqli_fetch_assoc($result)){
-        $id = $row['class_id'];
-        $name = $row['class_name'];
+        $id = $row['section_id'];
+        $name = $row['section_name'];
         echo
         '
         <div class="card" style="width: 18rem;">
         <div class="card-body">
             <h5 class="card-title">'.$name.'</h5>
             <p class="card-text">Click to visit this class</p>
-            <a href="section.php?classid='.$id.'&schoolid='.$_SESSION['school_id'].'"><button class="btn btn-primary">Enter Class</button></a>
+            <a href="class.php?sectionid='.$id.'&schoolid='.$_SESSION['school_id'].'"><button class="btn btn-primary">Enter Class</button></a>
         </div>
         </div>
         ';
