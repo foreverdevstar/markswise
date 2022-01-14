@@ -38,8 +38,8 @@ else{
                             <input type="text" class="form-control" id="name" placeholder="Roll" name="roll">
                         </div>   
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="name" placeholder="Section" name="section" value=" <?php echo $sectionname ?> " readonly>
-                        </div>     
+                            <input type="text" class="form-control" id="name" placeholder="Section" value=" <?php echo $sectionname ?> " readonly>
+                        </div>        
                         <div class="mb-3">
                             <p>Subect Marks</p>
                             <div class="row mb-3">
