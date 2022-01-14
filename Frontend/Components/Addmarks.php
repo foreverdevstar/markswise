@@ -1,12 +1,23 @@
 <div class="container text-center mt-4">
     <!-- Button trigger modal -->
     <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-        New Student
+        Add New Student
     </button>
 </div>
 
 <?php
 include '../Backend/Utils/handleaddingmarks.php';
+$sectionid = $_GET['sectionid'];
+if($sectionid == 1){
+    $sectionname = "Section A";
+}
+elseif($sectionid == 2){
+    $sectionname = "Section B";
+}
+else{
+    $sectionname = "Section C";
+}
+
 ?>
 
 <!-- Modal -->
@@ -27,7 +38,7 @@ include '../Backend/Utils/handleaddingmarks.php';
                             <input type="text" class="form-control" id="name" placeholder="Roll" name="roll">
                         </div>   
                         <div class="mb-3">
-                            <input type="text" class="form-control" id="name" placeholder="Section" name="section">
+                            <input type="text" class="form-control" id="name" placeholder="Section" name="section" value=" <?php echo $sectionname ?> " readonly>
                         </div>     
                         <div class="mb-3">
                             <p>Subect Marks</p>

@@ -15,7 +15,7 @@ if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true)
         <div class="card-body">
             <h5 class="card-title">'.$name.'</h5>
             <p class="card-text">Click to visit this class</p>
-            <a href="class.php?sectionid='.$id.'&schoolid='.$_SESSION['school_id'].'"><button class="btn btn-primary">Enter Class</button></a>
+            <a href="class.php?classid='.$_GET['classid'].'&sectionid='.$id.'&schoolid='.$_SESSION['school_id'].'"><button class="btn btn-primary">Enter Class</button></a>
         </div>
         </div>
         ';
