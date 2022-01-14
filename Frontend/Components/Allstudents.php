@@ -19,6 +19,8 @@
         $section = $row['student_section'];
         $class = $row['class_id'];
 
+        $student_unique_id = $row['student_unique_id'];
+
         if($section == 1)
         {
             $sectionname = "A";
@@ -61,7 +63,7 @@
         <td>'.$name.'</td>
         <td>'.$classname.'</td>
         <td>'.$sectionname.'</td>
-        <td><button type="button" class="btn btn-success">View</button>&nbsp;&nbsp;<button type="button" class="btn btn-warning"><i class="far fa-edit"></i></button>&nbsp;&nbsp;<button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></td>
+        <td><a href="viewstudent.php?studentid='.$student_unique_id.'"><button type="button" class="btn btn-success">View</button></a>&nbsp;&nbsp;<a href="editstudent.php?studentid='.$student_unique_id.'"><button type="button" class="btn btn-warning"><i class="far fa-edit"></i></button></a>&nbsp;&nbsp;<a href="class.php?deletestudentid='.$student_unique_id.'"><button type="button" class="btn btn-danger"><i class="fas fa-trash"></i></button></a></td>
         ';
      }
 ?>
