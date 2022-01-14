@@ -7,17 +7,19 @@
 
 <?php
 include '../Backend/Utils/handleaddingmarks.php';
-$sectionid = $_GET['sectionid'];
-if($sectionid == 1){
-    $sectionname = "Section A";
+if(isset($_GET['sectionid'])){
+    $sectionid = $_GET['sectionid'];
+    if($sectionid == 1){
+        $sectionname = "Section A";
+    }
+    elseif($sectionid == 2){
+        $sectionname = "Section B";
+    }
+    else{
+        $sectionname = "Section C";
+    }
+    
 }
-elseif($sectionid == 2){
-    $sectionname = "Section B";
-}
-else{
-    $sectionname = "Section C";
-}
-
 ?>
 
 <!-- Modal -->

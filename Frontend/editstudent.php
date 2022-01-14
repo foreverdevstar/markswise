@@ -16,7 +16,7 @@
   </head>
   <body>
 <?php include 'Components/Navbar.php'?>
-<?php include 'Components/Allclasses.php'?>
+
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
