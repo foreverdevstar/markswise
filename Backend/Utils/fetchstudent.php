@@ -5,8 +5,10 @@
     $database = "markswise";
     $connection = mysqli_connect($servername, $username, $password, $database);
 
-    $studentid = $_GET['studentid'];
+    if(isset($_GET['studentid'])){
+        $studentid = $_GET['studentid'];
 
-    $sql = "SELECT * FROM `studentsmarks` where student_unique_id= '$studentid'"; 
-    $result = mysqli_query($connection, $sql);
+        $sql = "SELECT * FROM `studentsmarks` where student_unique_id= '$studentid'"; 
+        $result = mysqli_query($connection, $sql);
+    }
 ?>
