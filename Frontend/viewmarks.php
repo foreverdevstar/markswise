@@ -16,6 +16,12 @@
   </head>
   <body>
 <?php include 'Components/Studentclientside.php';
+
+// redirect if someone hits viewmarks.php
+if(!isset($_GET['studentid'])){
+  echo
+          '<script>window.location="studentaccess.php";</script>';
+}
 ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
     
