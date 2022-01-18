@@ -1,4 +1,4 @@
-# Markwise v1.0
+# Markswise v1.0
 #### Markwise is an institution management web application, helps to add students' marks with update and delete. It supports both student and institution side.
 ### App Screenshots
 
