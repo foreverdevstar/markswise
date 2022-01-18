@@ -18,5 +18,14 @@
 <?php include 'Components/Studentlogin.php'?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!--script to block previous page-->
+    <script type="text/javascript">
+        function preventBack() {
+            window.history.forward(); 
+        }
+        setTimeout("preventBack()", 0);
+        window.onunload = function () { null };
+    </script>
   </body>
 </html>

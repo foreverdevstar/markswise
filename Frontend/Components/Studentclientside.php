@@ -73,7 +73,7 @@ echo
         <p class="student-id text-center">Student Unique ID: '.$studentid.'</p>
         <h3 class="student-name text-center">Name: '.$name.'</h3>
         <h4 class="student-class-section text-center">Class: '.$classname.' Section: '.$sectionname.'</h4>
-        <h4 class="student-roll text-center mb-3">Roll: <?php echo $roll ?></h4>
+        <h4 class="student-roll text-center mb-3">Roll: '.$roll.'</h4>
         <h5 class="student-roll text-center mb-3"><u>Marks</u></h5>
         <table class="table">
             <thead>
