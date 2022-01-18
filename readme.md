@@ -1,17 +1,5 @@
 # Markswise v1.0.0
 #### Markwise is an institution management full stack LAMP web application, helps to add students' marks with update and delete. It supports both student and institution side.
-### App Screenshots
-
-![ss10](https://user-images.githubusercontent.com/79497113/150004345-1d12dcca-19e6-4bf1-9c23-2f4f7201347f.png)
-![ss1](https://user-images.githubusercontent.com/79497113/150004267-b09b0687-a981-4f0e-94f2-fa30e21a8249.png) ![ss2](https://user-images.githubusercontent.com/79497113/150004289-75c31d2a-6cac-4e4f-9528-0b002c2de46b.png)
-![ss3](https://user-images.githubusercontent.com/79497113/150004299-05c358d8-1839-4cab-94df-a0f435ed1a11.png) ![ss9](https://user-images.githubusercontent.com/79497113/150004338-3b89a561-16cd-40c0-a9a0-5b7970ff9915.png)
-![ss4](https://user-images.githubusercontent.com/79497113/150004308-b70255f6-6624-476e-aedb-3b6ccd80683e.png)
-![ss5](https://user-images.githubusercontent.com/79497113/150004314-8055f3ec-9251-42f5-a1c0-7e3a5587151a.png)
-![ss6](https://user-images.githubusercontent.com/79497113/150004321-aca404f6-cb3c-4203-aa16-896ec7d42ace.png)
-![ss7](https://user-images.githubusercontent.com/79497113/150004327-df487a7c-de46-4626-8e05-c6a02e2c1554.png)
-![ss8](https://user-images.githubusercontent.com/79497113/150004334-59883e67-15ec-493d-9b18-bf46c8fe5377.png)
-
-
 
 ### Design & Development
 - [Aryamitra Chaudhuri](https://www.github.com/aryamitra06)
@@ -26,6 +14,18 @@
 - Both Institution and Student side application
 - Fast and lightweight
 - Fully responsive
+
+### App Screenshots
+
+![ss10](https://user-images.githubusercontent.com/79497113/150004345-1d12dcca-19e6-4bf1-9c23-2f4f7201347f.png)
+![ss1](https://user-images.githubusercontent.com/79497113/150004267-b09b0687-a981-4f0e-94f2-fa30e21a8249.png) ![ss2](https://user-images.githubusercontent.com/79497113/150004289-75c31d2a-6cac-4e4f-9528-0b002c2de46b.png)
+![ss3](https://user-images.githubusercontent.com/79497113/150004299-05c358d8-1839-4cab-94df-a0f435ed1a11.png) ![ss9](https://user-images.githubusercontent.com/79497113/150004338-3b89a561-16cd-40c0-a9a0-5b7970ff9915.png)
+![ss4](https://user-images.githubusercontent.com/79497113/150004308-b70255f6-6624-476e-aedb-3b6ccd80683e.png)
+![ss5](https://user-images.githubusercontent.com/79497113/150004314-8055f3ec-9251-42f5-a1c0-7e3a5587151a.png)
+![ss6](https://user-images.githubusercontent.com/79497113/150004321-aca404f6-cb3c-4203-aa16-896ec7d42ace.png)
+![ss7](https://user-images.githubusercontent.com/79497113/150004327-df487a7c-de46-4626-8e05-c6a02e2c1554.png)
+![ss8](https://user-images.githubusercontent.com/79497113/150004334-59883e67-15ec-493d-9b18-bf46c8fe5377.png)
+
 
 
 ### Tech Stack
