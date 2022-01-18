@@ -1,11 +1,8 @@
 ![stackpirate (2)](https://user-images.githubusercontent.com/79497113/150009226-dff5a8ca-bbaf-4192-8c83-bd30e136d218.png)
 #### Markwise is an institution management full stack LAMP web application, helps to add students' marks with update and delete. It supports both student and institution side.
-
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 ### Design & Development
 - [Aryamitra Chaudhuri](https://www.github.com/aryamitra06)
-
-
-[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
 ### Features
 
