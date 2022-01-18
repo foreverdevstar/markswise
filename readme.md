@@ -1,6 +1,4 @@
 ![stackpirate (1)](https://user-images.githubusercontent.com/79497113/150008831-1c4b9570-5c9a-46a4-85b7-24bbf1639879.png)
-
-# Markswise v1.0.0
 #### Markwise is an institution management full stack LAMP web application, helps to add students' marks with update and delete. It supports both student and institution side.
 
 ### Design & Development
