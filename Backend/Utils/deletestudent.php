@@ -14,4 +14,15 @@ if(isset($_GET['deleteid']))
         window.location.href = "class.php?classid='.$classid.'&sectionid='.$sectionid.'&schoolid='.$schoolid.'";
         </script>';
 }
+
+if(isset($_GET['schoolid'])){
+        $schoolid = $_GET['schoolid'];
+      
+        if($schoolid != $schoolsessionid)
+        {
+          echo
+          '<script>window.location="index.php?error=accessdenied";</script>';
+        }
+      }
+      
 ?>

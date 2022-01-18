@@ -11,13 +11,26 @@
     <!-- main css -->
     <link rel="stylesheet" href="Style/index-main.css">
     <!-- fontawesome -->
-    <link href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css' rel='stylesheet'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <title>Markswise</title>
   </head>
   <body>
-<?php include 'Components/Navbar.php'?>
-<?php include 'Components/Addmarks.php'?>
-<?php include 'Components/Allstudents.php'?>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+<?php    
+include 'Components/Navbar.php';
+include 'Components/Addmarks.php';
+include 'Components/Allstudents.php';
+
+// application security
+if(isset($_GET['schoolid'])){
+  $schoolid = $_GET['schoolid'];
+
+  if($schoolid != $schoolsessionid)
+  {
+    echo
+    '<script>window.location="index.php?error=accessdenied";</script>';
+  }
+}
+?>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>

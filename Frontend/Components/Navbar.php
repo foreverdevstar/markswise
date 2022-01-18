@@ -3,8 +3,12 @@ session_start();
 include 'loginModal.php';
 include 'signupModal.php';
 include 'logoutModal.php';
+if(isset($_SESSION['loggedin']) && $_SESSION['loggedin']==true){
+    $schoolsessionid = $_SESSION['school_id'];
+}
 echo
-'<nav class="navbar navbar-expand-lg navbar-light bg-light">
+'
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href="index.php">
             <img src="./Images/favicon.png" alt="" width="30" height="30" class="d-inline-block align-text-top">

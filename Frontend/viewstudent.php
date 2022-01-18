@@ -15,8 +15,20 @@
     <title>Markswise</title>
   </head>
   <body>
-<?php include 'Components/Navbar.php'?>
-<?php include 'Components/Student.php'?>
+<?php include 'Components/Navbar.php';
+      include 'Components/Student.php';
+
+      if(isset($_GET['schoolid'])){
+        $schoolid = $_GET['schoolid'];
+      
+        if($schoolid != $schoolsessionid)
+        {
+          echo
+          '<script>window.location="index.php?error=accessdenied";</script>';
+        }
+      }
+
+?>      
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   </body>
